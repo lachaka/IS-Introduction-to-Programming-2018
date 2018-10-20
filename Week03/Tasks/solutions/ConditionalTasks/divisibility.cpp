@@ -2,24 +2,13 @@
 
 using namespace std;
 
-bool divisibility();
 
 int main() {
-
-	cout << boolalpha << divisibility() << endl;
-
-	return 0;
-}
-
-bool divisibility() {
-    int num = 0;
-    int nFactorial = 1;
+   int num = 0;
 
     cin >> num;
 
-    for (int i = 1; i <= 10; i++) {
-        nFactorial *= i;
-    }
+	cout << (num % (10 * 9 * 4 * 7) == 0 ? "Yes" : "No") << endl;
 
-    return num % nFactorial == 0;
+	return 0;
 }
