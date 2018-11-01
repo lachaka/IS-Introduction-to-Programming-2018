@@ -3,13 +3,18 @@
 using namespace std;
 
 int main(int argc, char const *argv[]) {
+	int num = 0;
 	int sum = 0;
-	int nums[7];
 
-	for (int i = 0; i < 7; i++) {
-		cin >> nums[i];
-		sum += nums[i];
+	do {
+		cin >> num;
+	} while (num < 10 || num > 100);
+
+	if (num % 2 == 1) {
+		num--;
 	}
+
+	sum = ((2 + num) * num) / 4;
 
 	cout << sum << endl;
 
