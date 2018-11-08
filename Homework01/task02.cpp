@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]) {
 
 	total = loan * (1 + (months * rate) / 100);
 
-	cout << "Monthly interest rate: " << rate / months << endl;
+	cout << "Monthly interest rate: " << rate / 12 << endl;
 	cout << "q = " << 1 + (months * rate) / 100 << endl;
 	cout << "Monthly payment: " << total / months << endl;
 	cout << "The total amount to be returned: " << total << endl;
